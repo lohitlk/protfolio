@@ -1,0 +1,85 @@
+.typewriter {
+    overflow: hidden;
+    font-family: 'Bebas Neue', cursive;
+    white-space: nowrap;
+    letter-spacing: .20vh;
+    margin: 0 auto;
+    animation:
+         typing 3.5s steps(40, end),
+         blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+         width: 0
+    }
+
+    to {
+         width: 100%
+    }
+}
+.el {
+     
+  border:2px solid rgba(255, 186, 57, 0.513);
+  -moz-box-shadow: 0px 6px 5px rgba(246, 212, 60, 0.603);
+  -webkit-box-shadow: 0px 6px 5px rgba(248, 192, 39, 0.52);
+  box-shadow: 0px 6px 5px rgba(248, 188, 59, 0.555);
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  border-radius:50%;
+  -moz-box-shadow: inset 10px 10px 50px #fff;
+     
+   }
+   @supports (mask-image: paint(smooth-corners)) {
+     .el.is-loaded {
+       border-radius: 0;
+       mask-image: paint(smooth-corners);
+       --smooth-corners: 4;
+     }
+   }
+   @media only screen and (min-width: 1000px) and (max-width: 1600px) {
+        .home-info{
+             margin-top: 25vh;
+             
+        }
+        .typewriter{
+             font-size: 40pt;
+        }
+        .el{
+             float: right;
+             filter: blur(0.4px) brightness(1.4) contrast(0.6) grayscale(0.76) hue-rotate(345deg) invert(0.07) saturate(2.7) sepia(0.47);
+        }
+   }
+
+   @media only screen and (min-width: 770px) and (max-width: 990px){
+     .typewriter{
+          font-size: 25pt;
+     }   
+     .el{
+             
+          margin-right: 30%;
+          max-width: 50vh;
+          filter: blur(0.2px) grayscale(0.47) invert(0.11) hue-rotate(27deg) saturate(0.5);
+        }
+   }
+
+   @media only screen and (min-width: 426px) and (max-width: 767px) {
+        .el{
+             align-content: center;
+          filter: blur(0.2px) grayscale(0.47) invert(0.11) hue-rotate(27deg) saturate(0.5);
+        }
+   
+}
+@media only screen and (min-width: 360px) and (max-width: 425px) {
+     .home-info{
+          text-align-last: center;
+          
+          margin-right: 20%;
+     }
+     .el{
+          margin-right: 10%;
+          max-width: 80vh;
+          filter: blur(0.2px) grayscale(0.47) invert(0.11) hue-rotate(27deg) saturate(0.5);
+     }
+}
